@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Logo/ICO.ico">
+    <title>NỘI THẤT DUY VÀ KHOA</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+    <body>
+        <div id="header">
+            <img src="../img/Logo/Logo1 (version 3).png" alt="" style="height: 100%;">
+            <h1>Biến ngôi nhà của bạn trở thành một tổ ấm</h1>
+            <form action="">
+                <input id="myInput" type="text" placeholder="Search..">  
+                <button type="button">Tìm kiếm</button>
+            </form>
+            <ul class="menu">
+                <li>
+                    <a href="">Trang Chủ</a>
+                    <ul class="menu-child">
+                        <li>
+                            <ul class="navbar nav">
+                                <!-- <li class="navbar-item"><a class="navbar-link" href="#" id="btn1">Đăng nhập</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="#" id="btn2">Đăng ký</a></li> -->
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="#" id="btn1">Đăng nhập</a>
+                                    <a class="navbar-link" href="#" id="btn2">Đăng ký</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Khuyến Mãi</a></li>
+                <li>
+                    <a href="">Dịch Vụ</a>
+                        <ul class="menu-child">
+                            <li>
+                                <ul class="navbar nav">
+                                    <li class="navbar-item">
+                                        <a class="navbar-link" href="#" id="tb1">Thông tin địa chỉ của hàng</a>
+                                        <a class="navbar-link" href="#" id="tb2">Phản hồi ý kiến</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="">Giỏ Quà</a></li>
+            </ul>
+        </div>        
+        <div class="modal fade" role="dialog" id="myModal1">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">ĐĂNG NHẬP</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <label for="Name" class="control-label col-xs-3">Tên đăng nhập</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="Name" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbName">*</span>
+                            </div>
+                            <label for="MK" class="control-label col-xs-3">Mật khẩu</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" id="MK" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbMK">*</span>
+                            </div>
+                            <button class="btn btn-sucess btn-group-justifird" id="Save" type="button" style="color: white; background-color: green; width: 100%;">
+                                Đăng nhập
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">ĐĂNG KÝ TÀI KHOẢN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <label for="Name" class="control-label col-xs-3">Tên đăng nhập</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="Name" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbName">*</span>
+                            </div>
+                            <label for="MK" class="control-label col-xs-3">Mật khẩu</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" id="MK" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbMK">*</span>
+                            </div>
+                            <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="DC" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbDC">*</span>
+                            </div>
+                            <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="SDT" class="form-control">
+                                <span class="text-dange
+                                r" style="color: red;" id="tbSDT">*</span>
+                            </div>
+                            <label for="Email" class="control-label col-xs-3">Email</label>
+                            <div class="col-xs-9">
+                                <input type="email" id="Email" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbEmail">*</span>
+                            </div>
+                            <button class="btn btn-sucess btn-group-justifird" id="Save" type="button" style="color: white; background-color: green; width: 100%;">
+                                Đăng ký
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="tbb1">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">THÔNG TIN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <p>Địa chỉ:12 Nguyễn Văn Bảo, Gò Vấp</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="tbb2">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">PHẢN HỒI</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" id="fname" name="fname"><br>
+                            <input type="submit" value="Submit">
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+         <div id="content">
+            <p>Tại đây chúng tôi bán nội thất trang trí cho ngôi nhà của bạn</p>
+        </div>
+
+        <div id="section">
+            <div class="category">
+                <div class="dropdown">
+                    <button class="dropbtn">Danh Mục Sản Phẩm</button>
+                    <div class="dropdown-content">
+                      <a href="#">Bàn, ghế</a>
+                      <a href="#">Kệ,tủ</a>
+                      <a href="#">Trang trí</a>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- NỘI DUNG TRANG BÁN HÀNG -->
+            <!--    <div id="section-row">
+                        <div class="gallery"></div>
+                        <div class="gallery"></div>
+                    </div> -->
+            <!-- BACKUP ONLY -->
+            
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/Products/Bàn ăn gấp gọn màu đá hoa cương.png" alt="Bàn ăn gấp gọn màu đá hoa cương">
+                    <p>Bàn Ăn Gấp Gọn Màu Đá Hoa Cương<br>1.960.000 VNĐ</p>
+                </div>
+                
+                <div class="gallery">
+                    <img src="../img/Products/Bộ Poster tự chọn (có sẵn hoặc được bạn thiết kế).png" alt="Bộ Poster tự chọn (có sẵn hoặc được bạn thiết kế)">
+                    <p>Bộ Poster Tự Chọn (có sẵn hoặc được bạn thiết kế)<br> 48.000 - 100.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Ghế Đẩu Nhỏ Bằng Gỗ Trơn.png" alt="Ghế Đẩu Nhỏ Bằng Gỗ Trơn">
+                    <p>Ghế Đẩu Nhỏ Bằng Gỗ Trơn <br> 173.000</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Kệ để đồ dùng.png" alt="Kệ để đồ dùng">
+                    <p>Kệ Để Đồ Dùng <br> 158.000đ</p>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/Products/KỆ GỖ ĐỂ ĐỒ DECOR NHÀ CỬA.png" alt="KỆ GỖ ĐỂ ĐỒ DECOR NHÀ CỬA">
+                    <p>Kệ Gỗ Để Đồ Decor Nhà Cửa <br> 280.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/KỆ GÓC TRANG TRÍ 4 TẦNG NAN SỌC.png" alt="KỆ GÓC TRANG TRÍ 4 TẦNG NAN SỌC">
+                    <p>Kệ Góc Trang Trí 4 Tầng Nan Sọc <br> 179.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Kệ Trang Trí Tượng Cành Tùng.png" alt="Kệ Trang Trí Tượng Cành Tùng">
+                    <p>Kệ Trang Trí Tượng Cành Tùng <br> 350.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Móc treo đồ hình Piano.png" alt="Móc treo đồ hình Piano">
+                    <p>Móc Treo Đồ Hình Piano <br> 243.000 - 288.000đ</p>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/Products/Sofa da bò thật ZDA031.png" alt="Bàn ăn gấp gọn màu đá hoa cương">
+                    <p>Sofa Da Bò Thật <br> 70.000.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Tủ lưới sắt lắp ghép đa năng.png" alt="Bộ Poster tự chọn (có sẵn hoặc được bạn thiết kế)">
+                    <p>Tủ Lưới Sắt Lắp Ghép Đa Năng <br> 4.000 - 20.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Thảm thấm hút.png" alt="">
+                    <p>Thảm Thấm Hút <br> 687.000 - 1.087.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/Products/Thanh gỗ treo tường.png" alt="">
+                    <p>Thanh Gỗ Treo Tường <br> 79.000 - 89.000đ</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left-foot">
+                <h2>Thành viên thực hiện trang web</h2>
+                <p>20040311 - Đinh Hoàng Duy</p>
+                <p>20018261 - Lê Đăng Khoa</p>
+            </div>
+            <div class="right-foot">
+                <img src="../img/Logo/Logo1 (version 3).png" alt="" style="height: 100%;">
+            </div>
+        </div>
+    </body>
+</html>
